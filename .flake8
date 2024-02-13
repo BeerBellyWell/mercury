@@ -1,0 +1,11 @@
+[flake8]
+extend-ignore =
+    E501,
+    
+exclude =
+    logs,
+    .env,
+    __pycache__,
+    .gitignore,
+    venv
+max-complexity = 10
