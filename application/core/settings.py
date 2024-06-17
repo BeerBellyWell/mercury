@@ -20,4 +20,4 @@ driver = webdriver.Chrome(service=service)
 
 
 def time_sleep_1_sec():
-    return time.sleep(1)
+    return time.sleep(1.5)

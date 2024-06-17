@@ -28,10 +28,10 @@ def saving() -> bool:
 
         # Batch settlement
         driver.find_element(By.XPATH, '/html/body/div[1]/div/div[3]/form/div[1]/ul/li[8]/span').click()
-        time_sleep_1_sec()
+        time.sleep(10)
 
         # Confirm conditions
-        driver.find_element(By.XPATH, '/html/body/div[1]/div/div[3]/div/table/tr[1]/td/table/tr[3]/td[2]/label').click()
+        driver.find_element(By.XPATH, '/html/body/div[1]/div/div[3]/div/table/tr[1]/td/table/tr[3]/td[2]/label/input').click()
         time_sleep_1_sec()
 
         # Click execute
@@ -43,3 +43,23 @@ def saving() -> bool:
         time_sleep_1_sec()
 
         return True
+
+'''
+ветеринарные документы
+/html/body/div[1]/div/div[1]/div[2]/div[3]/ul/li[7]/a
+
+оформленные
+/html/body/div[1]/div/div[3]/table/tbody/tr/td[3]/ul/li/ul/li[1]/a
+
+выделить все
+/html/body/div[1]/div/div[3]/form/div[1]/ul/li[2]/input
+
+пакетное гашение
+/html/body/div[1]/div/div[3]/form/div[1]/ul/li[8]/span
+
+подтверждение
+/html/body/div[1]/div/div[3]/div/table/tr[1]/td/table/tr[3]/td[2]/label/input
+
+выполнить
+/html/body/div[1]/div/div[3]/div/table/tr[2]/td/div/button[2]
+'''

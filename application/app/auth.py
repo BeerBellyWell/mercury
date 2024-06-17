@@ -15,7 +15,7 @@ def auth() -> bool:
         driver.find_element(By.CLASS_NAME, 'btn.login-btn.btn-success').click()
 
         # Sleep for manual CAPTCHA entry
-        time.sleep(30)
+        # time.sleep(30)
 
         # Select the "Greece" store
         driver.find_element(By.XPATH, '//*[@id="body"]/form/div/div[1]/div/label[2]').click()
