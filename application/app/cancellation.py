@@ -28,7 +28,7 @@ def cancellation() -> bool:
         time_sleep_1_sec()
 
         # Cancel the invoice
-        driver.find_element(By.XPATH, '//tbody/tr/td/div/button[2]').click()
+        driver.find_element(By.XPATH, '//tbody/tr/td/div/button[1]').click()
         time_sleep_1_sec()
 
         # Confirm cancellation in the pop-up window
