@@ -1,4 +1,3 @@
-import time
 from selenium.webdriver.common.by import By
 from core.settings import driver, LOGIN, PASSWORD, URL, time_sleep_1_sec, logger
 

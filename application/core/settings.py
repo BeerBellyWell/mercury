@@ -13,10 +13,10 @@ LOGIN = os.getenv('LOGIN')
 PASSWORD = os.getenv('PASS')
 URL = os.getenv('URL')
 
-logger.add("../logs/log_{time}_file.log", mode="w")
+logger.add("../logs/{time:YYYY-MM-DD}/log_{time:HH-mm-ss}_file.log", mode="w")
 
 service = Service(executable_path=ChromeDriverManager().install())
-driver = webdriver.Chrome(service=service)
+driver = webdriver.Chrome()  # (service=service)
 
 
 def time_sleep_1_sec():
